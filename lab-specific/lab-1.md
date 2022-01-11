@@ -1,5 +1,29 @@
 Lab 1 FAQ
----------
+=========
+
+## Can't clone from GitHub
+
+### Problem
+
+When attempting to clone your repository from GitHub, you receive this error:
+
+```
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-for-git-operations/ for more information.
+fatal: Authentication failed for 'https://github.com/cs100/lab-01---introduction-to-software-construction-tooling-username.git/'
+```
+
+### Solution
+
+The lab manual hasn't been updated to reflect recent changes at GitHub. You can't clone using your username and password anymore for security reason.
+
+There are two options:
+
+ 1. [Set up a personal authentication](https://github.com/settings/tokens). For this class, select all scopes so that you're not limited.
+ 2. Set up SSH
+
+Most people on Slack used the token method.
+
 
 ## CMake Warning (dev)
 
