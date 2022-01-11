@@ -51,6 +51,21 @@ This warning is for project developers.  Use -Wno-dev to suppress it.
 The professor has confirmed that you can safely ignore this warning.
 
 
+## CMake Cache Error
+
+### Problem
+
+When attempting to run `cmake3 .`, you receive this error message:
+
+```
+CMake Error: The current CMakeCache.txt directory [...] is different than the directory [...] where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt
+```
+
+### Solution
+
+This usually happens when you rename your project folder. Deleting CMakeCache.txt will fix this.
+
+
 ## make: 'area_calculator' is up to date.
 
 ### Problem
