@@ -104,4 +104,14 @@ After adding the `googletest` submodule to your repository, you receive compilat
 
 ### Solution
 
-You may haven't added the updated tools mentioned in the section about `.bashrc`. These errors are caused becaues the default version of `g++` is too old to build the `googletest` module.
+#### Solution #1
+
+This will restore [an older version of `googletest`](https://github.com/google/googletest/commit/f966ed) that is more likely to work.
+
+```bash
+pushd googletest ; git checkout f966ed ; popd
+```
+
+#### Solution #2
+
+You may have forgotten to add the updated tools mentioned in the section about `.bashrc`. These errors are caused becaues the default version of `g++` is too old to build the `googletest` module.
